@@ -4,14 +4,14 @@
 #include <stdio.h>
 int main ()
 {
-    int N, prim, cont=0, prod=1, mul;
+    int N, cont=1, mul=1;
     printf("Escribe la cantidad de números: ");
+    scanf("%i", &N);
     while(cont<=N)
     {
-        mul=prod*(prod+2);
-        prod=prod+2;
-        scanf("%i", &prod);
+        mul=mul*cont;
+        cont++;
     }
-    printf("El producto de los %d números naturales es: ", mul);
+    printf("El producto de los %d números naturales es: %d\n", N, mul);
     return 0;
 }
