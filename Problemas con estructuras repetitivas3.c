@@ -4,23 +4,15 @@
 #include <stdio.h>
 int main()
 {
-    float sum=0, mod;
-    int cont=10;
+    int cont=10, sum=0;
     
-    while(++cont<=50)
+    while(cont<=50)
     {
-        mod=cont%2;
-        if(mod=0)
+        if(cont%2==0)
         {
             sum=cont+sum;
-            scanf("%f", &sum);
         }
-        else
-        {
-            sum=sum;
-            scanf("%f", &sum);
-        }
+        cont++;
     }
-    printf("La suma de los números pares comprometidos entre 10 y 50 es %f", sum);
-    return 0;
+        printf("La suma de los números pares comprometidos entre 10 y 50 es %d\n", sum);
 }
