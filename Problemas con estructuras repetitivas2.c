@@ -1,9 +1,6 @@
 //Construya un diagrama de flujo que lea 100 números naturales 
 //y cuente cuántos de ellos son positivos, negativos o nulos.
 
-//Construya un diagrama de flujo que lea 100 números naturales 
-//y cuente cuántos de ellos son positivos, negativos o nulos.
-
 #include <stdio.h>
 int main()
 {
